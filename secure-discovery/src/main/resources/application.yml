@@ -9,12 +9,9 @@ server:
     client-auth: need
     key-store: classpath:eureka.jks
     key-store-password: 123456
+    key-alias: eureka
     trust-store: classpath:eureka.jks
     trust-store-password: 123456
-    key-alias: eureka
-    
-security:
-  require-ssl: true
     
 eureka:
   instance:
@@ -22,12 +19,8 @@ eureka:
     securePort: ${server.port}
     securePortEnabled: true  
     nonSecurePortEnabled: false 
-    secureVirtualHostName: ${spring.application.name}
     homePageUrl: https://${eureka.instance.hostname}:${server.port}/
     statusPageUrl: https://${eureka.instance.hostname}:${server.port}/admin/info
-    metadataMap:
-      hostname : ${eureka.instance.hostname}
-      securePort: ${server.port}
   client:
     registerWithEureka: false
     fetchRegistry: false

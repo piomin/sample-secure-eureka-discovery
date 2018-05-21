@@ -6,9 +6,9 @@ server:
   port: ${PORT:8090}
   ssl:
     enabled: true
-    key-store: classpath:app.jks
+    key-store: classpath:client.jks
     key-store-password: 123456
-    key-alias: app
+    key-alias: client
     
 security:
   require-ssl: true
@@ -24,4 +24,4 @@ eureka:
   client:
     securePortEnabled: true
     serviceUrl:
-defaultZone: https://localhost:8761/eureka/
+      defaultZone: https://localhost:8761/eureka/
