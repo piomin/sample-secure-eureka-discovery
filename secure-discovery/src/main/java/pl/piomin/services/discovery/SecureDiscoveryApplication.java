@@ -8,8 +8,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @EnableEurekaServer
 public class SecureDiscoveryApplication {
 
-	public static void main(String[] args) {
-		new SpringApplicationBuilder(SecureDiscoveryApplication.class).run(args);
-	}
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(SecureDiscoveryApplication.class).run(args);
+    }
 
 }
