@@ -25,3 +25,8 @@ eureka:
     securePortEnabled: true
     serviceUrl:
       defaultZone: https://localhost:8761/eureka/
+    tls:
+      keyStore: classpath:client.jks
+      keyStorePassword: 123456
+      trustStore: classpath:client.jks
+      trustStorePassword: 123456

@@ -6,12 +6,12 @@ server:
   port: 8761
   ssl:
     enabled: true
-    client-auth: need
+#    client-auth: need
     key-store: classpath:eureka.jks
     key-store-password: 123456
     key-alias: eureka
-    trust-store: classpath:eureka.jks
-    trust-store-password: 123456
+#    trust-store: classpath:eureka.jks
+#    trust-store-password: 123456
     
 eureka:
   instance:
